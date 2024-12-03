@@ -1,5 +1,5 @@
 result = []
-result = [int(x) for x in input("データを入力してください(スペース区切り)").split(" ")]
+result = [int(x) for x in input("データを入力してください(スペース区切り) > ").split(" ")]
 
 
 def goukei():
