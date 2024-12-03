@@ -11,18 +11,22 @@ class Customer:
     def entry_fee(self):
         if self.age < 20:
             return 1000
-        elif 20 <= self.age < 65:
+        elif self.age < 65:
             return 1500
         else:
             return 1200
 
     def info_csv(self):
-        if self.first_name == "Ken":
-            return "{},{},{}".format(ken.full_name(), ken.age, ken.entry_fee())
-        elif self.first_name == "Tom":
-            return "{},{},{}".format(tom.full_name(), tom.age, tom.entry_fee())
-        else:
-            return "{},{},{}".format(ieyasu.full_name(), ieyasu.age, ieyasu.entry_fee())
+        # if self.first_name == "Ken":
+        return "{},{},{}".format(self.full_name(), self.age, self.entry_fee())
+        # return "{},{},{}".format(ken.full_name(), ken.age, ken.entry_fee())
+        # elif self.first_name == "Tom":
+        # return "{},{},{}".format(tom.full_name(), tom.age, tom.entry_fee())
+
+        # return "{},{},{}".format(tom.full_name(), tom.age, tom.entry_fee())
+        # else:
+        # return "{},{},{}".format(ieyasu.full_name(), ieyasu.age, ieyasu.entry_fee())
+        # return "{},{},{}".format(ieyasu.full_name(), ieyasu.age, ieyasu.entry_fee())
 
 
 ken = Customer(first_name="Ken", family_name="Tanaka", age=15)
